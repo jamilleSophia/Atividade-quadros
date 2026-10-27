@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Cada cubo grande */
+.cubo1, .cubo2, .cubo3, .cubo4, 
+.cubo5, .cubo6, .cubo7, .cubo8 {
+    width: 150px;
+    height: 150px;
+    background: white;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+}
+
+/* As caixinhas pequenas */
+.caixinhas {
+    width: 30px;
+    height: 30px;
+    background: #6c5ce7;
+    border-radius: 5px;
+}
+
+/* 1 - Tudo no começo */
+.cubo1 {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+/* 2 - Tudo no final embaixo */
+.cubo2 {
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+/* 3 - Centralizado */
+.cubo3 {
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+/* 4 - Espalhado na vertical */
+.cubo4 {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 5 - Em coluna no centro */
+.cubo5 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+/* 6 - space-between na horizontal */
+.cubo6 {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 7 - 2 em cima e 2 embaixo */
+.cubo7 {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+/* 8 - Em grade 2x2 */
+.cubo8 {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.cubo8 .caixinhas {
+    width: 45%;
+    height: 45%;
+}
